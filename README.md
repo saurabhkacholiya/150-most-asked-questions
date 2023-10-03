@@ -6,4 +6,3 @@ note:- Thanks to neetcode for Question's and roadmap [neetcode.io](https://neetc
 ## Table of Contents 150 questions
 
 - Stack (7 questions)
-- Arrays & Hashing (9 questions coming soon)

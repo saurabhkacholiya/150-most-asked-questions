@@ -1,5 +1,7 @@
 // leetCode link https://leetcode.com/problems/valid-parentheses/
 
+// Time complexity -> O(N)
+// space complexity -> O(N)
 var isValid = function (s) {
   const stack = [];
 
