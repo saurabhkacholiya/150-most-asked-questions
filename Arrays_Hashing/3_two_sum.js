@@ -8,15 +8,15 @@
 
 // TC -> O(N^2)
 // SC -> O(1)
-// var twoSum = function (nums, target) {
-//   for (let i = 0; i < nums.length; i++) {
-//     for (let j = i + 1; j < nums.length; j++) {
-//       if (target === nums[i] + nums[j]) {
-//         return [i, j];
-//       }
-//     }
-//   }
-// };
+var twoSum = function (nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (target === nums[i] + nums[j]) {
+        return [i, j];
+      }
+    }
+  }
+};
 
 // TC -> O(N)
 // SC -> O(N)
@@ -30,7 +30,3 @@ var twoSum = function (nums, target) {
     obj[nums[i]] = i;
   }
 };
-
-const v = twoSum([3, 3], 6);
-
-console.log("value is ", v);
