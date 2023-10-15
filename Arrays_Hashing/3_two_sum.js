@@ -8,28 +8,29 @@
 
 // TC -> O(N^2)
 // SC -> O(1)
-var twoSum = function (nums, target) {
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (target === nums[i] + nums[j]) {
-        return [i, j];
-      }
-    }
-  }
-};
+// var twoSum = function (nums, target) {
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (target === nums[i] + nums[j]) {
+//         return [i, j];
+//       }
+//     }
+//   }
+// };
 
 // TC -> O(N)
 // SC -> O(N)
 var twoSum = function (nums, target) {
   const obj = {};
   for (let i = 0; i < nums.length; i++) {
+    const diff = target - nums[i];
+    if (obj[diff] !== undefined) {
+      return [obj[diff], i];
+    }
     obj[nums[i]] = i;
   }
-  for (key in obj) {
-    const missingNumber = target - Number(k);
-    console.log("missingNumber", missingNumber);
-    if (obj[missingNumber]) {
-      return [obj[k], obj[missingNumber]];
-    }
-  }
 };
+
+const v = twoSum([3, 3], 6);
+
+console.log("value is ", v);
