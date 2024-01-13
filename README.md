@@ -34,33 +34,40 @@ var twoSum = function (nums, target) {
 - SC O(N)
 
 ```js
-var isPalindrome = function(s) {
-    let str = getValidStr(s)
-    if(str.length === 1) return true
-    let left = 0
-    let right = str.length -1
-    while(left < right){
-        if(str[left] !== str[right]){
-            return false
-        }
-        left++
-        right--
-    }
-
-    return true
-};
-
-function getValidStr(str){
-    let newStr = ""
-    str = str.toLowerCase().replaceAll(" ","")
-    for(let i = 0; i < str.length; i++){
-        const charCode = str[i].charCodeAt(0)
-        if(charCode >= 97 && charCode <= 122 || charCode >= 48 && charCode <= 57){
-            newStr += str[i]
-        }
-    }
-    return newStr
+const lastElement = (arr) => {
+    return arr[arr.length - 1]
 }
+
+var isValid = function(s) {
+    const stack = []
+    for(let i = 0; i < s.length; i++){
+        if(s[i] === "(" || s[i] === "{" || s[i] === "["){
+            stack.push(s[i])
+        }else{
+            if(s[i] === ")"){
+                if(lastElement(stack) !== "("){
+                    return false
+                }else{
+                    stack.pop()
+                }
+            }else if(s[i] === "}"){
+                if(lastElement(stack) !== "{"){
+                    return false
+                }else{
+                    stack.pop()
+                }
+            }else {
+                if(lastElement(stack) !== "["){
+                    return false
+                }else{
+                    stack.pop()
+                }
+            }
+        }
+    }
+
+    return stack.length === 0
+};
 ```
 
 3. Merge two sorted list https://leetcode.com/problems/merge-two-sorted-lists/
