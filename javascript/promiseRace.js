@@ -1,6 +1,7 @@
 const p0 = Promise.reject(42);
 const p1 = Promise.resolve(2);
 
+// Aproach #1
 function promiseRaceWithAsync(iterable) {
   return new Promise((resolve, reject) => {
     if (iterable.length === 0) return;
@@ -16,6 +17,7 @@ function promiseRaceWithAsync(iterable) {
   });
 }
 
+// Aproach #2
 function promiseRaceWithThen(iterable) {
   return new Promise((resolve, reject) => {
     if (iterable.length === 0) return;
