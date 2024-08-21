@@ -3,6 +3,8 @@
 Commonly asked DSA question and Improve your logic solving below problem
 note:- Thanks to neetcode for Question's and roadmap [neetcode.io](https://neetcode.io/roadmap)
 
+# Javascript most asked interview questions [Readme](./javascript/README.md)
+
 ## Table of Contents 150 questions
 
 - [Week1](#Week1)
@@ -35,38 +37,38 @@ var twoSum = function (nums, target) {
 
 ```js
 const lastElement = (arr) => {
-    return arr[arr.length - 1]
-}
+  return arr[arr.length - 1];
+};
 
-var isValid = function(s) {
-    const stack = []
-    for(let i = 0; i < s.length; i++){
-        if(s[i] === "(" || s[i] === "{" || s[i] === "["){
-            stack.push(s[i])
-        }else{
-            if(s[i] === ")"){
-                if(lastElement(stack) !== "("){
-                    return false
-                }else{
-                    stack.pop()
-                }
-            }else if(s[i] === "}"){
-                if(lastElement(stack) !== "{"){
-                    return false
-                }else{
-                    stack.pop()
-                }
-            }else {
-                if(lastElement(stack) !== "["){
-                    return false
-                }else{
-                    stack.pop()
-                }
-            }
+var isValid = function (s) {
+  const stack = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "(" || s[i] === "{" || s[i] === "[") {
+      stack.push(s[i]);
+    } else {
+      if (s[i] === ")") {
+        if (lastElement(stack) !== "(") {
+          return false;
+        } else {
+          stack.pop();
         }
+      } else if (s[i] === "}") {
+        if (lastElement(stack) !== "{") {
+          return false;
+        } else {
+          stack.pop();
+        }
+      } else {
+        if (lastElement(stack) !== "[") {
+          return false;
+        } else {
+          stack.pop();
+        }
+      }
     }
+  }
 
-    return stack.length === 0
+  return stack.length === 0;
 };
 ```
 
