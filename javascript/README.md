@@ -8,3 +8,4 @@
 4. A basic example of how Promise uses then able object [code](./promiseThenableImplementation.js)
 5. CIO PromiseWithResolver [code](./promiseWithResolver.js)
 6. CIO Promise.all [code](./promiseAll.js)
+7. CIO ClassName [code](./className.js)
