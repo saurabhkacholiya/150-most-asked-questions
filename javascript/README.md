@@ -10,3 +10,4 @@
 6. CIO Promise.all [code](./promiseAll.js)
 7. CIO ClassName [code](./className.js)
 8. CIO jQuery.css() [code](./jQuery-css.js)
+9. Chaining [code](./chaining.js)
