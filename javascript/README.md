@@ -11,3 +11,4 @@
 7. CIO ClassName [code](./className.js)
 8. CIO jQuery.css() [code](./jQuery-css.js)
 9. Chaining [code](./chaining.js)
+10. camelCaseKeys [code](./camelCaseKeys.js)
