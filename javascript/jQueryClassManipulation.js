@@ -29,7 +29,7 @@ export default function $(selector) {
     },
 
     removeClass: function (className) {
-      this.removeClass(className, false);
+      this.toggleClass(className, false);
       return this;
     },
   };
