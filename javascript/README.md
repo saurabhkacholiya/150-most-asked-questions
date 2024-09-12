@@ -15,3 +15,4 @@
 11. Curry[code](./curry.js)
 12. CIO GetElementByTagName [code](./getElementByTagName.js)
 13. CIO Class Manipulation [code](./jQueryClassManipulation.js)
+14. CIO JSON.stringify [code](./JSON.stringify.js)
