@@ -10,7 +10,7 @@ export default function getElementsByTagName(element, tagNameProps) {
       elementArr.push(el);
     }
     for (const child of el.children) {
-      travers(child);
+      traverse(child);
     }
   }
 
