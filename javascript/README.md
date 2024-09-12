@@ -14,3 +14,4 @@
 10. camelCaseKeys [code](./camelCaseKeys.js)
 11. Curry[code](./curry.js)
 12. CIO GetElementByTagName [code](./getElementByTagName.js)
+13. CIO Class Manipulation [code](./jQueryClassManipulation.js)
