@@ -42,4 +42,4 @@ var isPalindrome = function (s) {
   return true;
 };
 
-console.log("isPlaindrome is ", isPalindrome("0P"));
+console.log("isPalindrome is ", isPalindrome("0P"));
