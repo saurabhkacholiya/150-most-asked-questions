@@ -24,7 +24,7 @@ const getSpaceRemoved = (s) => {
 
 // TC -> O(n)
 // SC -> O(n)
-// pattern -> Two pointer
+// pattern -> Two pointer (left and right) if left === right we break
 var isPalindrome = function (s) {
   // creates a new space
   const str = getSpaceRemoved(s);
