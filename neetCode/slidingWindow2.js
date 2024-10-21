@@ -2,7 +2,7 @@
 
 const arr = [4, 2, 2, 3, 3, 3];
 
-const findLongestSubArrayWithSameValue = (arr, k) => {
+const findLongestSubArrayWithSameValue = (arr) => {
   let length = 0;
   let left = 0;
   for (let right = 0; right < arr.length; right++) {
@@ -14,4 +14,4 @@ const findLongestSubArrayWithSameValue = (arr, k) => {
   return length;
 };
 
-console.log("O(n)", findLongestSubArrayWithSameValue(arr, 3));
+console.log("O(n)", findLongestSubArrayWithSameValue(arr));
