@@ -1,6 +1,6 @@
 // SC O(N)
 // TC O(N * log N)
-//
+// why this is space O(N) ?? Maybe split is creating new array
 var isAnagramSubOptimal = function (s, t) {
   return s.split("").sort().join("") === t.split("").sort().join("");
 };
