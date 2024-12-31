@@ -1,5 +1,6 @@
-const topArr = [1, 1, 1, 2, 2, 3];
+const topArr = [1, 1, 1, 2, 2, 3, 3];
 
+// need to revise more
 // pattern: bucket sort in this the index of array is total number of
 // SC -> O(N)
 // TC -> O(N)
@@ -29,8 +30,11 @@ const topKFrequent = (arr, k) => {
   for (let i = occurrenceArr.length - 1; i >= 0; i--) {
     if (k > 0) {
       occurrenceArr[i]?.forEach((item) => {
-        result.push(item);
-        k--;
+        if (k > 0) {
+          // this i added
+          result.push(item);
+          k--;
+        }
       });
     }
   }
