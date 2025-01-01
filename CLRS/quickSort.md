@@ -9,7 +9,7 @@
 
 - Since quicksort tends to work on smaller sections of the array, the data it needs is more likely to be stored in the CPU cache. This means fewer expensive memory accesses to RAM and faster execution.
 
-
+```
 quickSort(arr,leftIndex,rightIndex)
     if(leftIndex < rightIndex)
         const pivotIndex = partition(arr,leftIndex,rightIndex)
@@ -26,6 +26,7 @@ partition(arr,leftIndex, rightIndex)
             Swap i, j
     swap i + 1, j
     return i + 1
+```
 
 ```js
 const arr = [45, 63, 1, 23, 7, 5, 3, 1];

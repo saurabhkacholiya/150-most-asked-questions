@@ -18,7 +18,7 @@ Stable Algorithm -> [1, 2, 3, 4a, 4b]
 
 -->
 
-
+```
 mergeSort(arr)
 
     if arr === 1 return arr
@@ -49,7 +49,7 @@ merge(leftArr, rightArr)
     append values remaining value form right index to result
 
     return result
-
+```
 
 ```js
 

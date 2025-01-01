@@ -7,7 +7,7 @@ EXTRACT-MAX(S) removes and returns the element of S with the largest K
 INCREASE-KEY(S,x,k) increases the value of index x with given key I
 
 
-
+```
 <!-- Returning of heap extract max is O(log n) -->
 HEAP-EXTRACT-MAX(A) 
     if A.heapSize < 0
@@ -32,7 +32,7 @@ MAX-HEAP-INSERT(A,KEY)
     A[A.heapSize - 1] = -Infinity
     HEAP-INCREASE-KEY(A,A.heapSize,key)
 
-
+```
 
 <!-- This i will work on later part -->
 

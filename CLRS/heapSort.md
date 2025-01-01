@@ -8,7 +8,7 @@ Sorting phase: 𝑂(𝑛 log 𝑛)
 6. The HEAPSORT procedure takes time O.n lg n, since the call to BUILD-MAX- HEAP takes time O(n) and each of the n - 1 calls to MAX-HEAPIFY takes time O(log n) 
 7. MAX-HEAPIFY takes time O(log n) on each node there are only 2 option to left or right or current index value in the array is greater so that why O(log n) time. 
 
-
+```
 buildHeapSort(A)
    buildMaxHeap(A)
    for i = A.length down to 0
@@ -37,7 +37,7 @@ maxHeapify(A,i)
     if(largest !== i)
         swap value of A[i] with largest
         maxHeapify(A,largest)
-
+```
 
 ```js
 

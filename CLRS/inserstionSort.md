@@ -3,15 +3,16 @@ A = [5,2,4,6,1,3]
 - Time complexity O(N^2) 
 - Space complexity O(1)
 
-
-for j = 1 of A.length
-key = A[j]
-i = j - 1
-while(i >= 0 && A[i] > key){
-    A[i + 1] = A[i]
-    i = i - 1
-}
-A[i + 1] = key
+```
+    for j = 1 of A.length
+    key = A[j]
+    i = j - 1
+    while(i >= 0 && A[i] > key){
+        A[i + 1] = A[i]
+        i = i - 1
+    }
+    A[i + 1] = key
+```
 
 ```js
 
